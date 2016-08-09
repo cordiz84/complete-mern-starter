@@ -28,8 +28,6 @@ require('./assets/stylesheets/partials/_footer.scss');
 require('./assets/stylesheets/partials/_navigation.scss');
 require('./assets/stylesheets/partials/_socialicons.scss');
 require('./assets/stylesheets/partials/_forms.scss');
-require('./assets/stylesheets/partials/_profile.scss');
-require('./assets/stylesheets/partials/_sidebar.scss');
 
 //move page to top on page change
 function onPageChange() {
