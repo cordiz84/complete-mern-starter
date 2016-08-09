@@ -1,5 +1,5 @@
 # complete-mern-starter
-My MERN stack starter pack.
+This is the very beginning of my MERN stack starter pack.
 
 ###current features
 1. **JWT Authentication** Register, login, and authenticate users. Stores users in a mongoDB.
