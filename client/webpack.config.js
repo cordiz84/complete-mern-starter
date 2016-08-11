@@ -2,10 +2,15 @@ var webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+  //context and entry
   context: __dirname,
   entry: "./src/index.js",
+
+  //debug tools
   debug: true,
   devtool: "#eval-source-map",
+
+  //loaders
   module: {
     loaders: [
         {
@@ -42,15 +47,20 @@ module.exports = {
       }
     ]
 },
+//output
   output: {
     path: __dirname,
     filename: "bundle.js"
   },
+
+  //dev server
   devServer: {
     historyApiFallback: true,
     contentBase: './',
     hot: true
   },
+
+  //plugins
   plugins: [
     //new webpack.DefinePlugin({ 'process.env':{ 'NODE_ENV': JSON.stringify('production') } }),
     new webpack.optimize.DedupePlugin(),
