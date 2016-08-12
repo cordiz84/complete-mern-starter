@@ -11,14 +11,12 @@ import Footer from './footer';
 export default class App extends Component {
   render() {
     return (
-      <div className="master_container">
+      <div className="page_container">
         <div className="nav_container">
           <Navigation pathName={this.props.location.pathname}/>
         </div>
-        <div className="page_container">
-          <div>{this.props.children}</div>
-          <Footer />
-        </div>
+        <div>{this.props.children}</div>
+        <Footer />
       </div>
     );
   }
